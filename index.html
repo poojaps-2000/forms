@@ -12,61 +12,81 @@
             background-color:#056676 ;
             margin: 40px 30px 40px 30px;
         }
+        form{
+            align-items: center;
+
+        }
         .container{
             background-color:#5eaaa8 ;
         }
         h1{
             color: floralwhite;
         }
+        
 
     </style>
     
     <div class="container jumbotron">
         <h1>KINDLY FILL THE FORM</h1>
         <br>
-        <form id="f" ><strong>
+        <form action="POST"><strong>
             <div class="form-group row">
                 <div class="col-sm-5">
                     <label for="fn" class="col-form-label">FIRST NAME</label>
-                        <input type="text" class="form-control form-inline" id="fn" name="firstname" value=""
+                        <input type="text" autocomplete="off" class="form-control" id="fn" name="firstname" value=""
                             placeholder="First Name">
                 </div>
 
                 <div class="col-sm-5">
                     <label for="ln" class="col-form-label">LAST NAME</label>
-                    <input type="text" class="form-control form-inline" id="ln" name="lastname" value=""
+                    <input type="text" autocomplete="off" class="form-control" id="ln" name="lastname" value=""
                           placeholder="Last Name">
                 </div>
             </div>
 
             <div class="form-group row">
-                <div class="col-sm-10">
+                <div class="col-sm-5">
                     <label for="em" class="col-form-label">EMAIL ID</label>
-                        <input type="email" class="form-control form-inline" id="em" name="mailid" value=""
+                        <input type="email" autocomplete="off" class="form-control" id="em" name="mailid" value=""
                             placeholder="Email id">
                 </div>
-            </div>
-            <div class="form-group row">
                 <div class="col-sm-5">
-                    <label for="age" class="col-form-label">CHOOSE AGE</label>
-                    <select name="Select Age" class="custom-select form-inline form-control" id="">
-                        <option value="">Choose Age</option>
-                        <option value="">Less than 18</option>
-                        <option value="">18-30</option>
-                        <option value="30-50">30-50</option>
-                        <option value="">50+</option>
-                        </select>
-                </div>
-                <div class="col-sm-5">
-                    <label for="phn" class="col-form-label">PHONE NUMBER</label>
-                        <input type="number" class="form-control form-inline" id="phn" name="mailid" value=""
-                            placeholder="Phone number">
+                    <label for="ph" class="col-form-label">PHONE NUMBER</label>
+                        <input type="tel" autocomplete="off" class="form-control" id="ph" name="telephone" value=""
+                            placeholder="Phone NUmber">
                 </div>
             </div>
-            
             <div class="form-group row">
-                <div class="col-xs-1 offset-1">
-                    <button type="button" class="btn btn-secondary">SUBMIT</button>
+                <div class="col-sm-4">
+                    <label for="clg" class="col-form-label">COLLEGE NAME</label>
+                        <input type="text" autocomplete="off" class="form-control" id="clg" name="college" value=""
+                            placeholder="College">
+                </div>
+                <div class="col-sm-3 ">
+                    <label for="yr" class="col-form-label">YEAR</label>
+                    <select name="year" class="custom-select form-control" id="yr">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                   </select>
+                </div>
+               
+                <div class="col-sm-3">
+                    <label for="br" class="col-form-label">BRANCH</label>
+                    <select name="Select Age" class="custom-select form-control" id="br">
+                        <option value="">COMPUTER SCIENCE</option>
+                        <option value="">MECHANICAL</option>
+                        <option value="">CIVIL</option>
+                        <option value="">ELECTRICAL</option>
+                        <option value="">ELECTRONICS</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+           <div class="form-group row">
+                <div class="col-xs-2 offset-1">
+                    <button type="button" class="btn btn-secondary form-control">SUBMIT</button>
                 </div>
             </div>
 
