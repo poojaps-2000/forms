@@ -1,46 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title></title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
 </head>
-  <body>
+<body>
     <style>
-      body{
-        background-color: #a8dadc;
-        margin:70px 0px 30px 0px;
-      }
-      /* h1{
-        color: floralwhite;
-      } */
-      /* .jumbotron{
-        background-color: #457b9d; */
-      }
-      .container{
-        padding: 90px;
-        margin: 20px 0px 20px 0px;
-      }
+        body{
+            background-color:#056676 ;
+            margin: 40px 30px 40px 30px;
+        }
+        .container{
+            background-color:#5eaaa8 ;
+        }
+        h1{
+            color: floralwhite;
+        }
+
     </style>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>SUBMIT YOUR ENTRIES HERE...</h1>
-          <form class="form-group" id="form1">
-          <strong>
-              FIRST NAME:
-              <input type="text" name="" value="" placeholder="enter here" autocomplete="off" required><pre>
-               LAST NAME:
-              <input type="text" name="" value="" placeholder="enter here" autocomplete="off" required><br><br>
-              EMAIL:
-              <input type="email" name="" value="" placeholder="valid email adress" autocomplete="off" required><br>
-              ADD YOUR FILE :
-              <input type="file" name="" value="" placeholder="" autocomplete="off" required><br><br>
-              <button type="button" class="btn btn-success" name="button">SUBMIT</button><br>
-          </strong>
-        </form>
-      </div>
+    
+    <div class="container jumbotron">
+        <h1>KINDLY FILL THE FORM</h1>
+        <br>
+        <form id="f" ><strong>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="fn" class="col-form-label">FIRST NAME</label>
+                        <input type="text" class="form-control form-inline" id="fn" name="firstname" value=""
+                            placeholder="First Name">
+                </div>
+
+                <div class="col-sm-5">
+                    <label for="ln" class="col-form-label">LAST NAME</label>
+                    <input type="text" class="form-control form-inline" id="ln" name="lastname" value=""
+                          placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-10">
+                    <label for="em" class="col-form-label">EMAIL ID</label>
+                        <input type="email" class="form-control form-inline" id="em" name="mailid" value=""
+                            placeholder="Email id">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="age" class="col-form-label">CHOOSE AGE</label>
+                    <select name="Select Age" class="custom-select form-inline form-control" id="">
+                        <option value="">Choose Age</option>
+                        <option value="">Less than 18</option>
+                        <option value="">18-30</option>
+                        <option value="30-50">30-50</option>
+                        <option value="">50+</option>
+                        </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="phn" class="col-form-label">PHONE NUMBER</label>
+                        <input type="number" class="form-control form-inline" id="phn" name="mailid" value=""
+                            placeholder="Phone number">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-xs-1 offset-1">
+                    <button type="button" class="btn btn-secondary">SUBMIT</button>
+                </div>
+            </div>
+
+
+        </form></strong>
     </div>
-  </body>
+    
+</body>
 </html>
